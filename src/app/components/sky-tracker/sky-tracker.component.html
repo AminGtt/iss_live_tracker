@@ -1,0 +1,21 @@
+<mgl-map
+  [center]="[long, lat]"
+  [interactive]="false"
+  [movingOptions]="{speed: 0.5}"
+  [style]="'mapbox://styles/mapbox/satellite-streets-v11'"
+  [zoom]="[2]"
+>
+  <mgl-geojson-source
+    [data]="geojson"
+    id="iss"
+    type="geojson">
+  </mgl-geojson-source>
+
+  <mgl-layer
+    [layout]="{'icon-image': 'rocket-15', 'icon-size': 1.5}"
+    id="points"
+    source="iss"
+    type="symbol"
+  >
+  </mgl-layer>
+</mgl-map>

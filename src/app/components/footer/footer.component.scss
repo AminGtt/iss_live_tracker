@@ -1,0 +1,26 @@
+footer{
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+div{
+  padding: 0 15px;
+  background: white;
+  border-radius: 15px;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+
+  li{
+    margin: 0 15px;
+
+    img{
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

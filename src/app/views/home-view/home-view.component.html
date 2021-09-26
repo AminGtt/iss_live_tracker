@@ -1,0 +1,24 @@
+<section>
+  <main class="container">
+    <article>
+      <app-sky-tracker
+        [geojson]="geojson"
+        [lat]="lat"
+        [long]="long">
+      </app-sky-tracker>
+    </article>
+    <article>
+      <app-ground-tracker
+        [geojson]="geojson"
+        [lat]="lat"
+        [long]="long">
+      </app-ground-tracker>
+      <app-iss-details
+        [alt]="alt"
+        [vel]="vel"
+        [long]="long"
+        [lat]="lat">
+      </app-iss-details>
+    </article>
+  </main>
+</section>
